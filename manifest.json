@@ -1,0 +1,22 @@
+{
+  "name": "Portfólio - Gabriel Steffens",
+  "short_name": "Portfólio GS",
+  "description": "Portfólio de projetos de Gabriel Steffens, Desenvolvedor Front-End.",
+  "lang": "pt-BR",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#181f2a",
+  "theme_color": "#181f2a",
+  "icons": [
+    {
+      "src": "img/192x192.jpg",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/512x512.jpg",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

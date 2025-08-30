@@ -1,0 +1,398 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: #181f2a;
+    color: #e3e9f7;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    padding-top: 4rem;
+    transition: background 0.3s;
+}
+
+/* NAVBAR */
+.navbar-container {
+    background: #222c3a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.4);
+}
+
+nav ul {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+nav ul li {
+    color: #e3e9f7;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s;
+    cursor: pointer;
+    user-select: none;
+}
+
+nav ul li:hover {
+    background: #2e4a7d;
+    color: #fff;
+    box-shadow: 0 4px 16px #2e4a7d44;
+}
+
+/* MAIN CENTRALIZADO */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3.5rem; /* Espaço para o footer */
+    min-height: 100vh;
+}
+
+/* SECTIONS */
+.sobre-mim,
+.projetos,
+.contact {
+    background: #232e41;
+    border-radius: 18px;
+    margin: 2rem auto;
+    max-width: 900px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 4px 32px #0e162733;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* SOBRE MIM */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.profile img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 3px solid #2e4a7d;
+    object-fit: cover;
+    box-shadow: 0 2px 12px #2e4a7d44;
+    transition: transform 0.4s;
+}
+
+.profile img:hover {
+    transform: scale(1.08) rotate(-2deg);
+}
+
+.profile h1 {
+    font-size: 2.2rem;
+    color: #e3e9f7;
+    margin-bottom: 0.2rem;
+}
+
+.profile h2 {
+    font-size: 1.1rem;
+    color: #7da2ff;
+    font-weight: 400;
+    margin-bottom: 0.7rem;
+}
+
+.curriculo-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #2e4a7d;
+    color: #fff;
+    padding: 0.4rem 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background 0.3s;
+    box-shadow: 0 2px 8px #2e4a7d33;
+}
+
+.curriculo-link:hover {
+    background: #3a5bbf;
+}
+
+.sobre-mim p {
+    color: #b3c7e6;
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+/* PROJETOS */
+.projetos {
+    gap: 2rem;
+}
+
+.projetos h2 {
+    color: #7da2ff;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.github-link {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: #2e4a7d;
+    color: #fff;
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background 0.3s;
+    box-shadow: 0 2px 8px #2e4a7d33;
+}
+
+.github-link:hover {
+    background: #3a5bbf;
+}
+
+.github-projects {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.github-projects a {
+    background: #1a2232;
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #e3e9f7;
+    box-shadow: 0 2px 12px #2e4a7d22;
+    transition: background 0.3s, box-shadow 0.3s;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.github-projects a:hover {
+    background: #2e4a7d;
+    color: #fff;
+    box-shadow: 0 6px 24px #2e4a7d55;
+}
+
+.github-projects img {
+    width: 100%;
+    max-width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.7rem;
+    box-shadow: 0 2px 8px #2e4a7d33;
+    transition: transform 0.3s;
+}
+
+.github-projects a:hover img {
+    transform: scale(1.08) rotate(-2deg);
+}
+
+.github-projects span {
+    margin-top: 0.3rem;
+    color: #7da2ff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* CONTATO */
+.contact {
+    gap: 2rem;
+}
+
+.contact h2 {
+    color: #7da2ff;
+    font-size: 2rem;
+}
+
+.contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.contact-list a,
+.contact-list span {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    background: #1a2232;
+    color: #e3e9f7;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background 0.3s, color 0.3s;
+    box-shadow: 0 2px 8px #2e4a7d22;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.contact-list a:hover,
+.contact-list span:hover {
+    background: #2e4a7d;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-list img {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    object-fit: cover;
+    box-shadow: 0 1px 4px #2e4a7d33;
+    transition: transform 0.3s;
+}
+
+.contact-list a:hover img,
+.contact-list span:hover img {
+    transform: none;
+}
+
+/* FOOTER */
+.footer-container {
+    background: #1a2232;
+    color: #7da2ff;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1rem;
+    box-shadow: 0 -2px 12px #2e4a7d33;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+/* UTILITÁRIOS */
+.none {
+    display: none !important;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+    .projetos,
+    .sobre-mim,
+    .contact {
+        max-width: 98vw;
+        padding: 1rem;
+    }
+    .github-projects {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+    .contact-list {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+    main {
+        padding-bottom: 3.5rem;
+    }
+    nav ul {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+    nav ul li {
+        font-size: 1rem;
+        padding: 0.4rem 0.7rem;
+    }
+    .sobre-mim,
+    .projetos,
+    .contact {
+        padding: 1rem 0.3rem;
+        border-radius: 10px;
+        margin: 2rem 4vw;
+        border: 1.5px solid #2e4a7d;
+    }
+    .profile {
+        flex-direction: column;
+        gap: 0.7rem;
+        align-items: center;
+        text-align: center;
+    }
+    .profile img {
+        width: 70px;
+        height: 70px;
+    }
+    .github-projects {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .github-projects a {
+        padding: 0.7rem;
+    }
+    .github-projects img {
+        max-width: 90px;
+        height: 60px;
+    }
+    .contact-list {
+        flex-direction: column;
+        gap: 0.7rem;
+        align-items: stretch;
+        width: 100%;
+    }
+    .footer-container {
+        font-size: 0.8rem;
+        height: 2.5rem;
+        padding: 0.5rem 0.5rem 0 0.5rem;
+        gap: 1rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    nav ul li {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.5rem;
+    }
+    .profile h1 {
+        font-size: 1.3rem;
+    }
+    .profile h2 {
+        font-size: 0.9rem;
+    }
+    .github-link {
+        font-size: 0.95rem;
+        padding: 0.4rem 0.7rem;
+    }
+    .contact-list a,
+    .contact-list span {
+        font-size: 0.95rem;
+        padding: 0.5rem 0.7rem;
+    }
+}
